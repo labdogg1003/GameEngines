@@ -19,6 +19,7 @@ public class OrderRoomEnemyHealth : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "weapon")
 		{
+			Debug.Log ("hit");
 			transform.parent.GetComponent<OrderRoomManager>().lastEnemyKilledTag = this.gameObject.tag;
 			Destroy(this.gameObject);
 		}
