@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 5ea80be90a1bb1d419848c8e68f49cc5
+labels:
+- Floor
+- Pit
+- Grate
+- Vent
+NativeFormatImporter:
+  userData: 

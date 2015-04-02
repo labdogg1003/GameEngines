@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: f130df33d4de03f41888e3f1df7c3389
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: trough
+    100004: keg
+    100006: joint
+    100008: crossbeam
+    100010: rope4
+    100012: rope3
+    100014: rope2
+    100016: rope1
+    100018: rope
+    100020: plank
+    100022: bolt
+    100024: crossbar
+    100026: post
+    100028: brace
+    100030: joint2
+    100032: crossbeam2
+    400000: //RootNode
+    400002: trough
+    400004: keg
+    400006: joint
+    400008: crossbeam
+    400010: rope4
+    400012: rope3
+    400014: rope2
+    400016: rope1
+    400018: rope
+    400020: plank
+    400022: bolt
+    400024: crossbar
+    400026: post
+    400028: brace
+    400030: joint2
+    400032: crossbeam2
+    2300000: trough
+    2300002: keg
+    2300004: joint
+    2300006: crossbeam
+    2300008: rope4
+    2300010: rope3
+    2300012: rope2
+    2300014: rope1
+    2300016: rope
+    2300018: plank
+    2300020: bolt
+    2300022: crossbar
+    2300024: post
+    2300026: brace
+    2300028: joint2
+    2300030: crossbeam2
+    3300000: trough
+    3300002: keg
+    3300004: joint
+    3300006: crossbeam
+    3300008: rope4
+    3300010: rope3
+    3300012: rope2
+    3300014: rope1
+    3300016: rope
+    3300018: plank
+    3300020: bolt
+    3300022: crossbar
+    3300024: post
+    3300026: brace
+    3300028: joint2
+    3300030: crossbeam2
+    4300000: brace
+    4300002: post
+    4300004: crossbar
+    4300006: bolt
+    4300008: plank
+    4300010: rope
+    4300012: rope1
+    4300014: rope2
+    4300016: rope3
+    4300018: rope4
+    4300020: crossbeam
+    4300022: joint
+    4300024: keg
+    4300026: trough
+    4300028: joint2
+    4300030: crossbeam2
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0399999991
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
