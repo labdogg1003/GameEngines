@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewEnemyHealth : MonoBehaviour {
+public class OrderRoomEnemyHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ()
@@ -20,6 +20,7 @@ public class NewEnemyHealth : MonoBehaviour {
 		if(other.gameObject.tag == "weapon")
 		{
 			Debug.Log ("hit");
+			transform.parent.GetComponent<OrderRoomManager>().lastEnemyKilledTag = this.gameObject.tag;
 			Destroy(this.gameObject);
 		}
 	}

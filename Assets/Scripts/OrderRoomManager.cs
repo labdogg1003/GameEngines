@@ -20,11 +20,6 @@ public class OrderRoomManager : MonoBehaviour
 	{
 		if(lastEnemyKilledTag != "")
 		{
-			Debug.Log(lastEnemyKilledTag);
-		}
-
-		if(lastEnemyKilledTag != "")
-		{
 			if(counter == 0)
 			{
 				if(lastEnemyKilledTag == "blue")
