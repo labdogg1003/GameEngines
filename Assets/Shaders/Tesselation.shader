@@ -5,7 +5,7 @@
             _NormalMap ("Normalmap", 2D) = "bump" {}
             _Displacement ("Displacement", Range(0, 1.0)) = 0.3
             _Color ("Color", color) = (1,1,1,0)
-            _SpecColor ("Spec color", color) = (0.5,0.5,0.5,0.5)
+            _BumpPower ("Bump Power", Range (3, 0.01)) = 5
         }
         SubShader {
             Tags { "RenderType"="Opaque" }
@@ -24,6 +24,7 @@
 
             sampler2D _DispTex;
             float _Displacement;
+            fixed _BumpPower;
 
             void disp (inout appdata v)
             {
@@ -42,9 +43,9 @@
             void surf (Input IN, inout SurfaceOutput o) {
                 half4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
                 o.Albedo = c.rgb;
-                o.Specular = 0.2;
-                o.Gloss = 1.0;
                 o.Normal = UnpackNormal(tex2D(_NormalMap, IN.uv_MainTex));
+                o.Normal.z = o.Normal.z * _BumpPower;
+                o.Normal = normalize(o.Normal);
             }
             ENDCG
         }

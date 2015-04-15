@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PressurePlatePuzzle : MonoBehaviour {
+public class PressurePlateMove : MonoBehaviour {
 	public Transform startMarker;
 	public Transform endMarker;
 	public float speed = 1.0F;

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 public class PressurePlatePuzzle : MonoBehaviour
@@ -12,7 +13,7 @@ public class PressurePlatePuzzle : MonoBehaviour
 	public GameObject target2;                   // The Door that the trigger will open
 	private bool openDoor1;                      // bool that checks that there is something on the pressure plate
 	private bool openDoor2;                      // bool that checks that there is something on the pressure plate
-
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -25,7 +26,7 @@ public class PressurePlatePuzzle : MonoBehaviour
 	{
 		anim1.SetBool("Open",openDoor1);
 	}
-
+	
 	void OnTriggerEnter (Collider other)
 	{
 		openDoor1 = true;
