@@ -24,13 +24,14 @@ public class PressurePlatePuzzle : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		anim1.SetBool("Open",openDoor1);
 	}
 	
 	void OnTriggerEnter (Collider other)
 	{
 		openDoor1 = true;
 		openDoor2 = false;
+		anim1.SetBool("Open",openDoor1);
+		anim2.SetBool("Open",openDoor2);
 	}
 	
 	
