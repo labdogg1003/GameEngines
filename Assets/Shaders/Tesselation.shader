@@ -5,7 +5,7 @@
             _NormalMap ("Normalmap", 2D) = "bump" {}
             _Displacement ("Displacement", Range(0, 1.0)) = 0.3
             _Color ("Color", color) = (1,1,1,0)
-            _BumpPower ("Bump Power", Range (3, 0.01)) = 5
+            _BumpPower ("Bump Power", Range (0, 1)) = 0
         }
         SubShader {
             Tags { "RenderType"="Opaque" }
