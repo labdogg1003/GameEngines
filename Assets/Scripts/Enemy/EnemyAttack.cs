@@ -4,12 +4,12 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;
-    public int attackDamage = 10;
+    public int attackDamage = 1;
 
 
     Animator anim;
     GameObject player;
-    PlayerHealth playerHealth;
+    nPlayerHealth playerHealth;
     //EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
@@ -18,7 +18,7 @@ public class EnemyAttack : MonoBehaviour
     void Awake ()
     {
         player = GameObject.FindGameObjectWithTag ("Player");
-        playerHealth = player.GetComponent <PlayerHealth> ();
+        playerHealth = player.GetComponent <nPlayerHealth> ();
         //enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent <Animator> ();
     }
