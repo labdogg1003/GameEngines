@@ -9,7 +9,7 @@ public class RigidbodyController : MonoBehaviour
 	Rigidbody rigidbody;
 	CapsuleCollider capsule;
 	//Animator animator;
-	bool isGrounded;
+	public bool isGrounded;
 	bool triggerPulled;
 	float groundHit = 0.0f;
 	Camera  mainCamera;
@@ -21,6 +21,8 @@ public class RigidbodyController : MonoBehaviour
 	public float gravity = 20.0f;
 	public float maxVelocityChange = 10.0f;
 	public float jumpHeight = 2.0f;
+
+	float height = 1f;
 
 	//public float runMultiplier;
 	
@@ -103,11 +105,23 @@ public class RigidbodyController : MonoBehaviour
 		{
 			//animator.SetBool ("falling", true);
 		}
+
+		isGrounded = false;
 		
 		//Manually Add In Gravity
 		rigidbody.AddForce(new Vector3 (0, -gravity * rigidbody.mass, 0));
+
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, -transform.up*height, out hit))
+		{
+			if(hit.transform.tag !="Player" && hit.distance < height)
+			{
+				isGrounded = true;
+				Debug.DrawRay(transform.position,-transform.up*height,Color.red);
+			}
+		}
 		
-		isGrounded = false;
+	
 	}
 	
 	float CalculateJumpVerticalSpeed ()
@@ -115,12 +129,6 @@ public class RigidbodyController : MonoBehaviour
 		// From the jump height and gravity we deduce the upwards speed 
 		// for the character to reach at the apex.
 		return Mathf.Sqrt(2 * jumpHeight * gravity);
-	}
-
-	//Check If Player Is Grounded
-	void OnCollisionStay (Collision collisionInfo)
-	{
-		isGrounded = true;
 	}
 }
 
