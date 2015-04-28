@@ -8,11 +8,12 @@ public class RigidbodyController : MonoBehaviour
 {
 	Rigidbody rigidbody;
 	CapsuleCollider capsule;
-	//Animator animator;
+	Animator animator;
 	public bool isGrounded;
 	bool triggerPulled;
 	float groundHit = 0.0f;
 	Camera  mainCamera;
+	public GameObject  character;
 
 	public float speed;
 	public float walkSpeed = 4.0f;
@@ -22,7 +23,7 @@ public class RigidbodyController : MonoBehaviour
 	public float maxVelocityChange = 10.0f;
 	public float jumpHeight = 2.0f;
 
-	float height = 1f;
+	float height = 4f;
 
 	//public float runMultiplier;
 	
@@ -36,7 +37,7 @@ public class RigidbodyController : MonoBehaviour
 		capsule = gameObject.GetComponent<CapsuleCollider> ();
 
 		//Get The Animator For The Player Graphic.
-		//animator = gameObject.GetComponentInChildren<Animator>(); 
+		animator = character.GetComponent<Animator>(); 
 
 		//Get The Main Camera
 		mainCamera = Camera.main;
@@ -54,8 +55,8 @@ public class RigidbodyController : MonoBehaviour
 		//Check If We Are On The Ground
 		if(isGrounded)
 		{
-			//animator.SetBool ("jumping", false);
-			//animator.SetBool ("falling", false);
+			animator.SetBool ("Jump", false);
+			animator.SetBool ("falling", false);
 
 			Vector3 targetVelocity;
 
@@ -70,7 +71,7 @@ public class RigidbodyController : MonoBehaviour
 			// Translate Input Into A Vector3
 			targetVelocity = new Vector3( Input.GetAxis("Horizontal") * sideSpeed, Camera.main.transform.localEulerAngles.y, Input.GetAxis("Vertical") * speed);
 
-			//animator.SetFloat("Speed", Input.GetAxis("Vertical") * speed);
+			animator.SetFloat("speed", Input.GetAxis("Vertical") * speed);
 			//animator.SetFloat("SideSpeed", Input.GetAxis("Horizontal")* sideSpeed);
 
 			// Calculate how fast we should be moving
@@ -94,16 +95,16 @@ public class RigidbodyController : MonoBehaviour
 			rigidbody.AddForce(velocityChange, ForceMode.VelocityChange);
 			
 			//Jump using "Jump" Button by adding force in y direction.
-			if (Input.GetButton("Jump"))
+			if (Input.GetButtonDown("Jump"))
 			{
 				rigidbody.velocity = new Vector3(velocity.x, CalculateJumpVerticalSpeed(), velocity.z);
-				//animator.SetBool ("jumping", true);
+				animator.SetBool ("Jump", true);
 
 			}
 		}
 		else
 		{
-			//animator.SetBool ("falling", true);
+			animator.SetBool ("falling", true);
 		}
 
 		isGrounded = false;
@@ -117,6 +118,7 @@ public class RigidbodyController : MonoBehaviour
 			if(hit.transform.tag !="Player" && hit.distance < height)
 			{
 				isGrounded = true;
+				animator.SetBool ("grounded", true);
 				Debug.DrawRay(transform.position,-transform.up*height,Color.red);
 			}
 		}
