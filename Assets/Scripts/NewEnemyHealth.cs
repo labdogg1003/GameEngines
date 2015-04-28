@@ -17,7 +17,7 @@ public class OrderRoomEnemyHealth : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if(other.gameObject.tag == "weapon" && other.gameObject.animation["Swing"].enabled == true)
+		if(other.gameObject.tag == "weapon")
 		{
 			Debug.Log ("hit");
 			transform.parent.GetComponent<OrderRoomManager>().lastEnemyKilledTag = this.gameObject.tag;

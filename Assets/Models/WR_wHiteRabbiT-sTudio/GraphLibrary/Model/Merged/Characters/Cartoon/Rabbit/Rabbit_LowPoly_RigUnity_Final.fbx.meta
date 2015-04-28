@@ -412,7 +412,7 @@ ModelImporter:
       transformModified: 1
     - name: Armature
       position: {x: 0, y: 0, z: 0}
-      rotation: {x: -4.32977997e-17, y: .707106709, z: .707106829, w: -4.32978063e-17}
+      rotation: {x: -4.3297803e-17, y: .707106769, z: .707106888, w: -4.32978096e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: DummyHeadTransform
@@ -422,88 +422,63 @@ ModelImporter:
       transformModified: 1
     - name: Pelvis[Bone][CpyLoc:BodyRot]
       position: {x: 1.49011612e-08, y: -2.83033131e-07, z: 1.70488274}
-      rotation: {x: -1.25150672e-08, y: -.707106709, z: -.707106829, w: -1.25150654e-08}
+      rotation: {x: -1.25150681e-08, y: -.707106769, z: -.707106888, w: -1.25150663e-08}
       scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PelvisLeft[Bone]
+      position: {x: -0, y: .5, z: 0}
+      rotation: {x: -.619213104, y: .34143123, z: .674020052, w: .213768423}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: TighLeft[Bone]
+      position: {x: 8.38190317e-09, y: .644103169, z: -1.50691015e-08}
+      rotation: {x: -.333489835, y: .0636639893, z: .0193914473, w: .940401793}
+      scale: {x: 1, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: ShinLeft[Bone][IK:LegLeft:2]
+      position: {x: 9.31322575e-08, y: .621195555, z: -1.17346644e-07}
+      rotation: {x: .317304045, y: .938628495, z: -.101974651, w: .0888595209}
+      scale: {x: .999999762, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: FootLeft[Bone][IK:FootLeft:1]
+      position: {x: -7.4505806e-08, y: .730688751, z: 1.00582838e-07}
+      rotation: {x: -.532049894, y: -.769606709, z: .349706531, w: -.048310414}
+      scale: {x: 1, y: .999999642, z: 1.00000024}
+      transformModified: 1
+    - name: ToesLeft[Bone][IK:ToesLeft:1]
+      position: {x: -2.23517418e-07, y: .79759419, z: 1.17346644e-07}
+      rotation: {x: -.298867196, y: .458850294, z: -.146309614, w: -.823849738}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: PelvisRight[Bone]
+      position: {x: -0, y: .5, z: 0}
+      rotation: {x: .619213104, y: .34143123, z: .674020052, w: -.213768423}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: TighRight[Bone]
+      position: {x: 1.86264515e-09, y: .644103169, z: 2.96343821e-08}
+      rotation: {x: -.333489805, y: -.0636639893, z: -.0193913579, w: .940401793}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: ShinRight[Bone][IK:LegRight:2]
+      position: {x: 4.47034836e-08, y: .621195436, z: -7.63684511e-08}
+      rotation: {x: -.317304343, y: .938628376, z: -.1019748, w: -.0888594612}
+      scale: {x: 1, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: FootRight[Bone][IK:FootRight:1]
+      position: {x: -1.86264515e-07, y: .730688691, z: -4.47034836e-08}
+      rotation: {x: .532050431, y: -.769606233, z: .34970665, w: .0483102612}
+      scale: {x: 1.00000024, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: ToesRight[Bone][IK:ToesRight:1]
+      position: {x: -1.34110451e-07, y: .797594309, z: -3.7252903e-08}
+      rotation: {x: -.298867196, y: -.458850294, z: .146309614, w: -.823849738}
+      scale: {x: .999999523, y: .999999642, z: .99999994}
       transformModified: 1
     - name: Spine0[Bone]
       position: {x: -0, y: .5, z: 0}
       rotation: {x: .10534396, y: -7.25943252e-08, z: -7.6901614e-09, w: .994435847}
       scale: {x: .99999994, y: 1.00000012, z: .999999881}
-      transformModified: 1
-    - name: ClavicleRight[Bone]
-      position: {x: 1.89756975e-08, y: .964150012, z: 6.87214197e-09}
-      rotation: {x: -.533688962, y: -.588265061, z: -.30753231, w: .52396971}
-      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
-      transformModified: 1
-    - name: ShoulderRight[Bone]
-      position: {x: -4.09781933e-08, y: .427209079, z: -1.00582838e-07}
-      rotation: {x: -.175462127, y: -.475691557, z: .0339587592, w: .861265063}
-      scale: {x: 1.00000012, y: .999999821, z: .999999881}
-      transformModified: 1
-    - name: ForearmRight[Bone][IK:ArmRight:2]
-      position: {x: -1.95577741e-08, y: 1.09017479, z: -2.98023224e-08}
-      rotation: {x: .0503444336, y: -.555972517, z: .0622430593, w: -.827336609}
-      scale: {x: .999999583, y: 1, z: .999999583}
-      transformModified: 1
-    - name: ThumbRight0[Bone]
-      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
-      rotation: {x: .453030884, y: .834449351, z: .129584461, w: -.285771251}
-      scale: {x: .999999702, y: 1.00000012, z: .999999762}
-      transformModified: 1
-    - name: ThumbRight1[Bone]
-      position: {x: -1.49011612e-07, y: .152476341, z: 3.7252903e-08}
-      rotation: {x: .189160839, y: .977703452, z: .0848080292, w: .0334938392}
-      scale: {x: 1.00000024, y: 1.00000072, z: .99999994}
-      transformModified: 1
-    - name: ThumbRight2[Bone]
-      position: {x: 2.71946192e-07, y: .108762681, z: -7.4505806e-08}
-      rotation: {x: .286910266, y: .246123672, z: -.218218505, w: -.89971453}
-      scale: {x: 1, y: .999999762, z: 1.00000024}
-      transformModified: 1
-    - name: FingerRight00[Bone]
-      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
-      rotation: {x: -.192862347, y: -.154691905, z: .0471864194, w: -.967805803}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FingerRight01[Bone]
-      position: {x: -7.4505806e-09, y: .181624994, z: 7.4505806e-08}
-      rotation: {x: .221351802, y: .0219526533, z: -.0139837675, w: -.974846601}
-      scale: {x: 1, y: 1, z: .99999994}
-      transformModified: 1
-    - name: FingerRight02[Bone]
-      position: {x: -1.78813934e-07, y: .125369281, z: 0}
-      rotation: {x: -.0736037567, y: .0599971861, z: -.0625567734, w: .993513703}
-      scale: {x: 1, y: .999999881, z: 1.00000024}
-      transformModified: 1
-    - name: FingerRight10[Bone]
-      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
-      rotation: {x: -.0871254653, y: -.00370544149, z: -.215729654, w: -.972551405}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FingerRight11[Bone]
-      position: {x: 7.4505806e-08, y: .185486302, z: 4.47034836e-08}
-      rotation: {x: .116545886, y: -.150089696, z: .202547893, w: -.960658431}
-      scale: {x: 1, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: FingerRight12[Bone]
-      position: {x: 9.68575478e-08, y: .13525638, z: 4.47034836e-08}
-      rotation: {x: -.101248585, y: .0219992939, z: -.0104190977, w: .994563341}
-      scale: {x: 1, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: FingerRight20[Bone]
-      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
-      rotation: {x: -.0237456709, y: .155833125, z: -.43443495, w: -.886802435}
-      scale: {x: 1.00000024, y: .999999762, z: .99999994}
-      transformModified: 1
-    - name: FingerRight21[Bone]
-      position: {x: -9.68575478e-08, y: .190274656, z: -5.96046448e-08}
-      rotation: {x: .128877461, y: -.252381057, z: .266037256, w: -.921367824}
-      scale: {x: 1.00000036, y: .999999821, z: .999999762}
-      transformModified: 1
-    - name: FingerRight22[Bone]
-      position: {x: 1.34110451e-07, y: .151546568, z: 2.08616257e-07}
-      rotation: {x: -.0626251251, y: .110414505, z: -.0845452845, w: .988300979}
-      scale: {x: 1.00000012, y: 1, z: 1.00000024}
       transformModified: 1
     - name: ClavicleLeft[Bone]
       position: {x: 1.89756975e-08, y: .964150012, z: 6.87214197e-09}
@@ -519,21 +494,6 @@ ModelImporter:
       position: {x: -1.78813934e-07, y: 1.09017479, z: 1.49011612e-08}
       rotation: {x: -.0260889791, y: -.544898212, z: -.004988492, w: .838081419}
       scale: {x: 1.00000012, y: 1, z: 1}
-      transformModified: 1
-    - name: ThumbLeft0[Bone]
-      position: {x: -8.56816769e-08, y: .59614414, z: 7.4505806e-08}
-      rotation: {x: -.453030944, y: .834449172, z: .129584581, w: .285771519}
-      scale: {x: 1.00000024, y: 1.00000012, z: .999999642}
-      transformModified: 1
-    - name: ThumbLeft1[Bone]
-      position: {x: -6.33299351e-08, y: .152476326, z: 2.04890966e-08}
-      rotation: {x: -.189160928, y: .977703452, z: .0848078132, w: -.0334939212}
-      scale: {x: .999999642, y: 1.00000036, z: 1}
-      transformModified: 1
-    - name: ThumbLeft2[Bone]
-      position: {x: 1.63912773e-07, y: .108762771, z: -2.98023224e-08}
-      rotation: {x: .286910474, y: -.246123731, z: .218218565, w: -.89971453}
-      scale: {x: 1.00000024, y: .999999881, z: 1}
       transformModified: 1
     - name: FingerLeft00[Bone]
       position: {x: -8.56816769e-08, y: .59614414, z: 7.4505806e-08}
@@ -580,6 +540,96 @@ ModelImporter:
       rotation: {x: -.0626253784, y: -.110414654, z: .0845454708, w: .988300979}
       scale: {x: .999999821, y: .999999881, z: 1}
       transformModified: 1
+    - name: ThumbLeft0[Bone]
+      position: {x: -8.56816769e-08, y: .59614414, z: 7.4505806e-08}
+      rotation: {x: -.453030944, y: .834449172, z: .129584581, w: .285771519}
+      scale: {x: 1.00000024, y: 1.00000012, z: .999999642}
+      transformModified: 1
+    - name: ThumbLeft1[Bone]
+      position: {x: -6.33299351e-08, y: .152476326, z: 2.04890966e-08}
+      rotation: {x: -.189160928, y: .977703452, z: .0848078132, w: -.0334939212}
+      scale: {x: .999999642, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: ThumbLeft2[Bone]
+      position: {x: 1.63912773e-07, y: .108762771, z: -2.98023224e-08}
+      rotation: {x: .286910474, y: -.246123731, z: .218218565, w: -.89971453}
+      scale: {x: 1.00000024, y: .999999881, z: 1}
+      transformModified: 1
+    - name: ClavicleRight[Bone]
+      position: {x: 1.89756975e-08, y: .964150012, z: 6.87214197e-09}
+      rotation: {x: -.533688962, y: -.588265061, z: -.30753231, w: .52396971}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: ShoulderRight[Bone]
+      position: {x: -4.09781933e-08, y: .427209079, z: -1.00582838e-07}
+      rotation: {x: -.175462127, y: -.475691557, z: .0339587592, w: .861265063}
+      scale: {x: 1.00000012, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: ForearmRight[Bone][IK:ArmRight:2]
+      position: {x: -1.95577741e-08, y: 1.09017479, z: -2.98023224e-08}
+      rotation: {x: .0503444336, y: -.555972517, z: .0622430593, w: -.827336609}
+      scale: {x: .999999583, y: 1, z: .999999583}
+      transformModified: 1
+    - name: FingerRight00[Bone]
+      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
+      rotation: {x: -.192862347, y: -.154691905, z: .0471864194, w: -.967805803}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FingerRight01[Bone]
+      position: {x: -7.4505806e-09, y: .181624994, z: 7.4505806e-08}
+      rotation: {x: .221351802, y: .0219526533, z: -.0139837675, w: -.974846601}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: FingerRight02[Bone]
+      position: {x: -1.78813934e-07, y: .125369281, z: 0}
+      rotation: {x: -.0736037567, y: .0599971861, z: -.0625567734, w: .993513703}
+      scale: {x: 1, y: .999999881, z: 1.00000024}
+      transformModified: 1
+    - name: FingerRight10[Bone]
+      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
+      rotation: {x: -.0871254653, y: -.00370544149, z: -.215729654, w: -.972551405}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FingerRight11[Bone]
+      position: {x: 7.4505806e-08, y: .185486302, z: 4.47034836e-08}
+      rotation: {x: .116545886, y: -.150089696, z: .202547893, w: -.960658431}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: FingerRight12[Bone]
+      position: {x: 9.68575478e-08, y: .13525638, z: 4.47034836e-08}
+      rotation: {x: -.101248585, y: .0219992939, z: -.0104190977, w: .994563341}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: FingerRight20[Bone]
+      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
+      rotation: {x: -.0237456709, y: .155833125, z: -.43443495, w: -.886802435}
+      scale: {x: 1.00000024, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: FingerRight21[Bone]
+      position: {x: -9.68575478e-08, y: .190274656, z: -5.96046448e-08}
+      rotation: {x: .128877461, y: -.252381057, z: .266037256, w: -.921367824}
+      scale: {x: 1.00000036, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: FingerRight22[Bone]
+      position: {x: 1.34110451e-07, y: .151546568, z: 2.08616257e-07}
+      rotation: {x: -.0626251251, y: .110414505, z: -.0845452845, w: .988300979}
+      scale: {x: 1.00000012, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: ThumbRight0[Bone]
+      position: {x: -1.06170774e-07, y: .59614408, z: -7.4505806e-08}
+      rotation: {x: .453030884, y: .834449351, z: .129584461, w: -.285771251}
+      scale: {x: .999999702, y: 1.00000012, z: .999999762}
+      transformModified: 1
+    - name: ThumbRight1[Bone]
+      position: {x: -1.49011612e-07, y: .152476341, z: 3.7252903e-08}
+      rotation: {x: .189160839, y: .977703452, z: .0848080292, w: .0334938392}
+      scale: {x: 1.00000024, y: 1.00000072, z: .99999994}
+      transformModified: 1
+    - name: ThumbRight2[Bone]
+      position: {x: 2.71946192e-07, y: .108762681, z: -7.4505806e-08}
+      rotation: {x: .286910295, y: .246123686, z: -.21821852, w: -.899714589}
+      scale: {x: 1, y: .999999762, z: 1.00000024}
+      transformModified: 1
     - name: Spine1[Bone][IK:Spine:2]
       position: {x: 1.93249434e-08, y: .964150012, z: -1.54795998e-08}
       rotation: {x: -.10534393, y: 7.25943323e-08, z: 7.69016317e-09, w: .994435847}
@@ -591,8 +641,8 @@ ModelImporter:
       scale: {x: .99999994, y: 1, z: .999999821}
       transformModified: 1
     - name: Head0[Bone][IK:Head:1]
-      position: {x: -1.05937943e-08, y: .451611102, z: -3.41970008e-08}
-      rotation: {x: .201325998, y: -3.65224059e-06, z: -7.84385009e-07, w: .979524314}
+      position: {x: -1.09986038e-08, y: .451792926, z: -7.66807716e-05}
+      rotation: {x: .626880109, y: -3.60680519e-06, z: 9.72152861e-07, w: .779115796}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: Head1[Bone]
@@ -612,7 +662,7 @@ ModelImporter:
       transformModified: 1
     - name: EarLeft2[Bone][Kine]
       position: {x: -4.51691449e-08, y: .668996692, z: 7.48550519e-08}
-      rotation: {x: .0826360136, y: -.00830584299, z: -.254580647, w: .963478565}
+      rotation: {x: .0826360211, y: -.00830584392, z: -.254580677, w: .963478625}
       scale: {x: .999999821, y: 1.00000036, z: 1.00000012}
       transformModified: 1
     - name: EarRight0[Bone]
@@ -629,56 +679,6 @@ ModelImporter:
       position: {x: 1.49011612e-08, y: .668996453, z: -8.19563866e-08}
       rotation: {x: .0826360285, y: .00830590632, z: .254580617, w: .963478625}
       scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
-      transformModified: 1
-    - name: PelvisLeft[Bone]
-      position: {x: -0, y: .5, z: 0}
-      rotation: {x: -.619213104, y: .34143123, z: .674020052, w: .213768423}
-      scale: {x: .99999994, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: TighLeft[Bone]
-      position: {x: 8.38190317e-09, y: .644103169, z: -1.50691015e-08}
-      rotation: {x: -.333489835, y: .0636639893, z: .0193914473, w: .940401793}
-      scale: {x: 1, y: 1.00000036, z: 1.00000012}
-      transformModified: 1
-    - name: ShinLeft[Bone][IK:LegLeft:2]
-      position: {x: 9.31322575e-08, y: .621195555, z: -1.17346644e-07}
-      rotation: {x: .317304045, y: .938628495, z: -.101974651, w: .0888595209}
-      scale: {x: .999999762, y: .999999821, z: .999999762}
-      transformModified: 1
-    - name: FootLeft[Bone][IK:FootLeft:1]
-      position: {x: -7.4505806e-08, y: .730688751, z: 1.00582838e-07}
-      rotation: {x: -.532049835, y: -.76960665, z: .349706501, w: -.0483104102}
-      scale: {x: 1, y: .999999642, z: 1.00000024}
-      transformModified: 1
-    - name: ToesLeft[Bone][IK:ToesLeft:1]
-      position: {x: -2.23517418e-07, y: .79759419, z: 1.17346644e-07}
-      rotation: {x: -.298867196, y: .458850294, z: -.146309614, w: -.823849738}
-      scale: {x: .999999881, y: 1.00000012, z: 1.00000024}
-      transformModified: 1
-    - name: PelvisRight[Bone]
-      position: {x: -0, y: .5, z: 0}
-      rotation: {x: .619213104, y: .34143123, z: .674020052, w: -.213768423}
-      scale: {x: .99999994, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: TighRight[Bone]
-      position: {x: 1.86264515e-09, y: .644103169, z: 2.96343821e-08}
-      rotation: {x: -.333489805, y: -.0636639893, z: -.0193913579, w: .940401793}
-      scale: {x: 1, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: ShinRight[Bone][IK:LegRight:2]
-      position: {x: 4.47034836e-08, y: .621195436, z: -7.63684511e-08}
-      rotation: {x: -.317304343, y: .938628376, z: -.1019748, w: -.0888594612}
-      scale: {x: 1, y: 1.00000012, z: .99999994}
-      transformModified: 1
-    - name: FootRight[Bone][IK:FootRight:1]
-      position: {x: -1.86264515e-07, y: .730688691, z: -4.47034836e-08}
-      rotation: {x: .532050431, y: -.769606233, z: .34970665, w: .0483102612}
-      scale: {x: 1.00000024, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: ToesRight[Bone][IK:ToesRight:1]
-      position: {x: -1.34110451e-07, y: .797594309, z: -3.7252903e-08}
-      rotation: {x: -.298867196, y: -.458850294, z: .146309614, w: -.823849738}
-      scale: {x: .999999523, y: .999999642, z: .99999994}
       transformModified: 1
     - name: Tail0[Bone]
       position: {x: -0, y: .5, z: 0}
@@ -697,7 +697,7 @@ ModelImporter:
       transformModified: 1
     - name: Dummies
       position: {x: 0, y: 0, z: 0}
-      rotation: {x: -4.32977997e-17, y: .707106709, z: .707106829, w: -4.32978063e-17}
+      rotation: {x: -4.3297803e-17, y: .707106769, z: .707106888, w: -4.32978096e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ArmLeft[LerpAnim]
@@ -717,7 +717,7 @@ ModelImporter:
       transformModified: 1
     - name: BodyRot
       position: {x: -.00914490223, y: -.243259951, z: .488456368}
-      rotation: {x: .707106829, y: 0, z: -0, w: .707106709}
+      rotation: {x: .707106888, y: 0, z: -0, w: .707106769}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: EarLeft[LerpAnim]

@@ -19,6 +19,7 @@ public class DoorAnimation : MonoBehaviour
 		anim = GetComponent<Animator>();
 
 		player = GameObject.FindGameObjectWithTag("Player");
+		Debug.Log (player);
 	}
 	
 	
