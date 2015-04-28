@@ -195,7 +195,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Swing 2
       takeName: Take 001
-      firstFrame: 160
+      firstFrame: 168
       lastFrame: 184
       wrapMode: 0
       orientationOffsetY: 0

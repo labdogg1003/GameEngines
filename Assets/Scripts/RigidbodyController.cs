@@ -23,7 +23,7 @@ public class RigidbodyController : MonoBehaviour
 	public float maxVelocityChange = 10.0f;
 	public float jumpHeight = 2.0f;
 
-	float height = 4f;
+	float height = .1f;
 
 	//public float runMultiplier;
 	

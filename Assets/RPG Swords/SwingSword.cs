@@ -17,7 +17,6 @@ public class SwingSword : MonoBehaviour
 	void Update () 
 	{
 		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(1);
-		Debug.Log(currentState.nameHash);
 		if (currentState.nameHash == Animator.StringToHash("Swing.transition"))
 		{
 			animator.SetLayerWeight(1, 0);
