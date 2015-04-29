@@ -96,12 +96,12 @@ public class nPlayerHealth : MonoBehaviour
 
         //playerShooting.DisableEffects ();
 
-        anim.SetTrigger("Die");
+        //anim.SetTrigger("Die");
 
         playerAudio.clip = deathClip;
         playerAudio.Play();
 
-        playerMovement.enabled = false;
+        //playerMovement.enabled = false;
         //playerShooting.enabled = false;
     }
 

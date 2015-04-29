@@ -17,9 +17,9 @@ public class NewEnemyHealth : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if(other.gameObject.tag == "weapon" && other.gameObject.animation["Swing"].enabled == true)
+		if(other.gameObject.tag == "weapon")
 		{
-			Debug.Log ("hit");
+			//Debug.Log ("hit");
 			Destroy(this.gameObject);
 		}
 	}
