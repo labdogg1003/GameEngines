@@ -13,7 +13,10 @@ public class EnemyManager : MonoBehaviour
 
     void Start ()
     {
-		anim = target.GetComponent<Animator>();
+		if(transform.GetComponent<Animator>()!=  null)
+		{
+			anim = target.GetComponent<Animator>();
+		}
     }
 
 
@@ -30,7 +33,19 @@ public class EnemyManager : MonoBehaviour
 	{
 		Debug.Log ("Spawning Enemies");
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
-		transform.GetComponent<MeshCollider>().enabled = false;
-		anim.SetBool("Open",true);
+		if(transform.GetComponent<MeshCollider>()!=  null)
+		{
+			transform.GetComponent<MeshCollider>().enabled = false;
+		}
+
+		if(transform.GetComponent<BoxCollider>()!=  null)
+		{
+			transform.GetComponent<BoxCollider>().enabled = false;
+		}
+
+		if(transform.GetComponent<Animator>()!=  null)
+		{
+			anim.SetBool("Open",true);
+		}
 	}
 }

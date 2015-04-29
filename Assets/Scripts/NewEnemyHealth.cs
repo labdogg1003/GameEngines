@@ -20,7 +20,10 @@ public class OrderRoomEnemyHealth : MonoBehaviour {
 		if(other.gameObject.tag == "weapon")
 		{
 			Debug.Log ("hit");
-			transform.parent.GetComponent<OrderRoomManager>().lastEnemyKilledTag = this.gameObject.tag;
+			if(transform.parent.GetComponent<OrderRoomManager>()!=null)
+			{
+				transform.parent.GetComponent<OrderRoomManager>().lastEnemyKilledTag = this.gameObject.tag;
+			}
 			Destroy(this.gameObject);
 		}
 	}
