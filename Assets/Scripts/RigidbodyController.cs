@@ -14,6 +14,7 @@ public class RigidbodyController : MonoBehaviour
 	float groundHit = 0.0f;
 	Camera  mainCamera;
 	public GameObject  character;
+	public GameObject[] feet;
 
 	public float speed;
 	public float walkSpeed = 4.0f;
@@ -113,16 +114,21 @@ public class RigidbodyController : MonoBehaviour
 		rigidbody.AddForce(new Vector3 (0, -gravity * rigidbody.mass, 0));
 
 		RaycastHit hit;
-		if (Physics.Raycast(transform.position, -transform.up*height, out hit))
+
+		for(int i = 0; i < feet.Length; i++ )
 		{
-			if(hit.transform.tag !="Player" && hit.distance < height)
+			if (Physics.Raycast(feet[i].transform.position, -feet[i].transform.up*height, out hit))
 			{
-				isGrounded = true;
-				animator.SetBool ("grounded", true);
-				Debug.DrawRay(transform.position,-transform.up*height,Color.red);
+				Debug.DrawRay(feet[i].transform.position,-feet[i].transform.up*height,Color.red);
+				if(hit.transform.tag !="Player" && hit.distance < height)
+				{
+					Debug.Log("grounded");
+					isGrounded = true;
+					animator.SetBool ("grounded", true);
+				}
 			}
+
 		}
-		
 	
 	}
 	
