@@ -4,7 +4,7 @@ using System.Collections;
 
 public class nPlayerHealth : MonoBehaviour
 {
-    public int startingHealth = 3;
+    public int startingHealth = 5;
     public int currentHealth;
     public Slider healthSlider;
     public Image damageImage;
@@ -33,26 +33,50 @@ public class nPlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if (currentHealth >= 3)
+        if (currentHealth >= 5)
         {
+            heart5.SetActive(true);
+            heart4.SetActive(true);
+            heart3.SetActive(true);
+            heart2.SetActive(true);
+            heart1.SetActive(true);
+        }
+        else if (currentHealth == 4)
+        {
+            heart5.SetActive(false);
+            heart4.SetActive(true);
+            heart3.SetActive(true);
+            heart2.SetActive(true);
+            heart1.SetActive(true);
+        }
+        else if (currentHealth == 3)
+        {
+            heart5.SetActive(false);
+            heart4.SetActive(false);
             heart3.SetActive(true);
             heart2.SetActive(true);
             heart1.SetActive(true);
         }
         else if (currentHealth == 2)
         {
+            heart5.SetActive(false);
+            heart4.SetActive(false);
             heart3.SetActive(false);
             heart2.SetActive(true);
             heart1.SetActive(true);
         }
         else if (currentHealth == 1)
         {
+            heart5.SetActive(false);
+            heart4.SetActive(false);
             heart3.SetActive(false);
             heart2.SetActive(false);
             heart1.SetActive(true);
         }
         else
         {
+            heart5.SetActive(false);
+            heart4.SetActive(false);
             heart3.SetActive(false);
             heart2.SetActive(false);
             heart1.SetActive(false);
@@ -72,6 +96,8 @@ public class nPlayerHealth : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public GameObject heart4;
+    public GameObject heart5;
 
     public void TakeDamage(int amount)
     {
